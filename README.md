@@ -172,9 +172,9 @@ UPDATE table_name
 SET column1 = new_value1, column2 = new_value2, ...
 WHERE condition;
 ````
-# PostgreSQL প্রশ্নোত্তর
 
-## প্রশ্ন: JOIN অপারেশনের গুরুত্ব এবং PostgreSQL-এ এটি কিভাবে কাজ করে?
+
+## প্রশ্ন ৮: JOIN অপারেশনের গুরুত্ব এবং PostgreSQL-এ এটি কিভাবে কাজ করে?
 
 ### JOIN কী?
 
