@@ -172,3 +172,42 @@ UPDATE table_name
 SET column1 = new_value1, column2 = new_value2, ...
 WHERE condition;
 ````
+# PostgreSQL প্রশ্নোত্তর
+
+## প্রশ্ন: JOIN অপারেশনের গুরুত্ব এবং PostgreSQL-এ এটি কিভাবে কাজ করে?
+
+### JOIN কী?
+
+JOIN হলো একাধিক টেবিলের ডাটা একত্রিত করার একটি পদ্ধতি। এটি সম্পর্কিত টেবিলগুলো থেকে তথ্য নিয়ে একটি যৌথ ফলাফল তৈরি করে।
+
+---
+
+### JOIN এর প্রকারভেদ:
+
+- **INNER JOIN**  
+  দুই টেবিলের মিল থাকা রেকর্ডগুলো রিটার্ন করে।
+
+- **LEFT JOIN (LEFT OUTER JOIN)**  
+  বাম টেবিলের সব রেকর্ড আনে, ডান টেবিল থেকে মিল না থাকলেও।
+
+- **RIGHT JOIN (RIGHT OUTER JOIN)**  
+  ডান টেবিলের সব রেকর্ড আনে, বাম টেবিল থেকে মিল না থাকলেও।
+
+- **FULL JOIN (FULL OUTER JOIN)**  
+  দুই টেবিলের সব রেকর্ড আনে, মিল না থাকলেও।
+
+---
+
+### PostgreSQL-এ JOIN এর কাজের ধরন:
+
+JOIN দুটি বা ততোধিক টেবিলের নির্দিষ্ট কলাম বা শর্তের মাধ্যমে রেকর্ডগুলোকে মিলিয়ে ফলাফল দেয়।
+
+---
+
+### উদাহরণ:
+
+```sql
+SELECT students.name, marks.score
+FROM students
+INNER JOIN marks ON students.id = marks.student_id;
+````
