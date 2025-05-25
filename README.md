@@ -139,7 +139,7 @@ CREATE TABLE example (
 SELECT * FROM students
 WHERE age > 18;
 ```
-## প্রশ্ন: LIMIT এবং OFFSET ক্লজের ব্যবহার কী?
+## প্রশ্ন ৬ : LIMIT এবং OFFSET ক্লজের ব্যবহার কী?
 
 ### LIMIT
 
@@ -159,7 +159,7 @@ WHERE age > 18;
 SELECT * FROM employees
 LIMIT 5 OFFSET 10;
 ```
-## প্রশ্ন: কিভাবে UPDATE স্টেটমেন্ট দিয়ে ডাটা পরিবর্তন করবেন?
+## প্রশ্ন ৭ : কিভাবে UPDATE স্টেটমেন্ট দিয়ে ডাটা পরিবর্তন করবেন?
 
 **UPDATE** স্টেটমেন্ট ব্যবহার করে ডাটাবেস টেবিলের বিদ্যমান ডাটা পরিবর্তন করা হয়।
 
