@@ -95,7 +95,7 @@ CREATE TABLE orders (
   FOREIGN KEY (student_id) REFERENCES students(student_id)
 );
 ```
-# PostgreSQL ডাটা টাইপ: VARCHAR ও CHAR পার্থক্য
+# প্রশ্ন 8:PostgreSQL ডাটা টাইপ: VARCHAR ও CHAR পার্থক্য
 
 ## VARCHAR এবং CHAR ডাটা টাইপের পার্থক্য
 
