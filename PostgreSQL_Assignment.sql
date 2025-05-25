@@ -4,7 +4,7 @@ CREATE TABLE rangers(
     name VARCHAR(50) NOT NULL,
 region VARCHAR(50)  NOT NULL
 );
-SELECT * FROM rangers;
+
 INSERT INTO rangers(name,region) VALUES 
 ('Alice Green','Northern Hills'),
 ('Bob White','River Delta'),
@@ -16,14 +16,12 @@ CREATE TABLE species(
     discovery_date DATE NOT NULL,
     conservation_status VARCHAR(50) NOT NULL
 );
-select * from species;
+
 INSERT INTO species(common_name,scientific_name,discovery_date,conservation_status) VALUES 
 ('Snow Leopard','Panthera uncia','1775-01-01','Endangered'),
 ('Bengal Tiger','Panthera tigris tigris','1758-01-01','Endangered'),
 ('Red Panda','Ailurus fulgens','1825-01-01','Vulnerable'),
 ('Asiatic Elephant',' Elephas maximus indicus','1758-01-01',' Endangered ');
-select * from species;
-ALTER TABLE species ALTER COLUMN discovery_date SET NOT NULL;
 
 CREATE TABLE sightings (
     sighting_id SERIAL PRIMARY KEY,
