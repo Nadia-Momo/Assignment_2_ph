@@ -1,5 +1,5 @@
 
-## প্রশ্ন ১: PostgreSQL কী?
+## প্রশ্ন ১: PostgreSQL কী?(What is PostgreSQL?)
 
 PostgreSQL (অথবা পোস্টগ্রেস) হলো একটি শক্তিশালী, ওপেন সোর্স অবজেক্ট-রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (ORDBMS)। এটি ডাটা সংরক্ষণ, পরিচালনা এবং দ্রুত খুঁজে পেতে ব্যবহৃত হয়।
 
@@ -30,7 +30,7 @@ FROM users
 WHERE active = true 
 ORDER BY created_at DESC;
 ````
-## প্রশ্ন ২: PostgreSQL-এ ডাটাবেস স্কিমার উদ্দেশ্য কী?
+## প্রশ্ন ২: PostgreSQL-এ ডাটাবেস স্কিমার উদ্দেশ্য কী?(What is the purpose of a database schema in PostgreSQL?)
 
 **ডাটাবেস স্কিমা** হলো একটি লজিক্যাল কন্টেইনার বা নামস্পেস, যা ডাটাবেসের টেবিল, ভিউ, ইনডেক্স, ফাংশন, টাইপ ইত্যাদি অবজেক্টগুলোকে সংগঠিত এবং গোষ্ঠীবদ্ধ করে।
 
@@ -62,7 +62,7 @@ CREATE TABLE public.users (
   email VARCHAR(100)
 );
 ````
-## প্রশ্ন ৩: PostgreSQL-এ Primary Key এবং Foreign Key কী?
+## প্রশ্ন ৩: PostgreSQL-এ Primary Key এবং Foreign Key কী?(Explain the Primary Key and Foreign Key concepts in PostgreSQL.)
 
 ### Primary Key (প্রাইমারি কী) কী?
 
@@ -95,7 +95,7 @@ CREATE TABLE orders (
   FOREIGN KEY (student_id) REFERENCES students(student_id)
 );
 ```
-# প্রশ্ন 8:PostgreSQL ডাটা টাইপ: VARCHAR ও CHAR পার্থক্য
+# প্রশ্ন 8:PostgreSQL ডাটা টাইপ: VARCHAR ও CHAR পার্থক্য(What is the difference between the VARCHAR and CHAR data types?)
 
 ## VARCHAR এবং CHAR ডাটা টাইপের পার্থক্য
 
@@ -118,7 +118,7 @@ CREATE TABLE example (
   country_code CHAR(3)  -- ৩ অক্ষরের ফিক্সড দৈর্ঘ্যের স্ট্রিং
 );
 ```
-## প্রশ্ন ৫: SELECT স্টেটমেন্টে WHERE ক্লজের উদ্দেশ্য কী?
+## প্রশ্ন ৫: SELECT স্টেটমেন্টে WHERE ক্লজের উদ্দেশ্য কী?(Explain the purpose of the WHERE clause in a SELECT statement.)
 
 
 **WHERE** ক্লজ ব্যবহার করা হয় ডাটাবেস থেকে নির্দিষ্ট শর্ত অনুযায়ী ডেটা নির্বাচন করার জন্য। এটি ফলাফলে শুধু সেসব রেকর্ড আনে যেগুলো ওই শর্ত পূরণ করে, পুরো টেবিলের ডেটা নয়।
@@ -139,7 +139,7 @@ CREATE TABLE example (
 SELECT * FROM students
 WHERE age > 18;
 ```
-## প্রশ্ন ৬ : LIMIT এবং OFFSET ক্লজের ব্যবহার কী?
+## প্রশ্ন ৬ : LIMIT এবং OFFSET ক্লজের ব্যবহার কী?(What are the LIMIT and OFFSET clauses used for?)
 
 ### LIMIT
 
@@ -159,7 +159,7 @@ WHERE age > 18;
 SELECT * FROM employees
 LIMIT 5 OFFSET 10;
 ```
-## প্রশ্ন ৭ : কিভাবে UPDATE স্টেটমেন্ট দিয়ে ডাটা পরিবর্তন করবেন?
+## প্রশ্ন ৭ : কিভাবে UPDATE স্টেটমেন্ট দিয়ে ডাটা পরিবর্তন করবেন?(How can you modify data using UPDATE statements?)
 
 **UPDATE** স্টেটমেন্ট ব্যবহার করে ডাটাবেস টেবিলের বিদ্যমান ডাটা পরিবর্তন করা হয়।
 
@@ -174,7 +174,7 @@ WHERE condition;
 ````
 
 
-## প্রশ্ন ৮: JOIN অপারেশনের গুরুত্ব এবং PostgreSQL-এ এটি কিভাবে কাজ করে?
+## প্রশ্ন ৮: JOIN অপারেশনের গুরুত্ব এবং PostgreSQL-এ এটি কিভাবে কাজ করে?(What is the significance of the JOIN operation, and how does it work in PostgreSQL?)
 
 ### JOIN কী?
 
