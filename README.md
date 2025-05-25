@@ -159,3 +159,16 @@ WHERE age > 18;
 SELECT * FROM employees
 LIMIT 5 OFFSET 10;
 ```
+## প্রশ্ন: কিভাবে UPDATE স্টেটমেন্ট দিয়ে ডাটা পরিবর্তন করবেন?
+
+**UPDATE** স্টেটমেন্ট ব্যবহার করে ডাটাবেস টেবিলের বিদ্যমান ডাটা পরিবর্তন করা হয়।
+
+---
+
+### UPDATE স্টেটমেন্টের সিনট্যাক্স:
+
+```sql
+UPDATE table_name
+SET column1 = new_value1, column2 = new_value2, ...
+WHERE condition;
+````
