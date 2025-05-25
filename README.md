@@ -87,3 +87,11 @@ Foreign Key হলো এমন একটি কলাম বা কলামগ
 ডাটা ইন্টিগ্রিটি নিশ্চিত করে: ফরেন কী-তে থাকা মান অবশ্যই রেফারেন্সড টেবিলের প্রাইমারি কী-র ভ্যালু হতে হবে অথবা NULL হতে পারে যদি অনুমতি থাকে।
 
 সম্পর্ক স্থাপন করে: টেবিল দুটির মধ্যে লজিক্যাল সম্পর্ক তৈরি করে।
+```sql
+CREATE TABLE orders (
+  order_id SERIAL PRIMARY KEY,
+  student_id INT,
+  order_date DATE,
+  FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+```
